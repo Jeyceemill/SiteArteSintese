@@ -14,7 +14,7 @@ body {
     max-width: 600px;
     margin: auto;
     background: #fff;
-    padding: 30px;
+    padding: 40px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -81,7 +81,3 @@ button:hover {
     margin-top: 20px;
     font-size: 16px;
 }
-
-
-
-

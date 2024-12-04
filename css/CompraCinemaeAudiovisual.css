@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+
+
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+ p,  ul {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+  }
+  
+   ul {
+    padding-left: 80px;
+  }
+  
+ 
+   ul li {
+    margin-bottom: 15px;
+  }
+
+/* Container do curso */
+.curso-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 850px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Imagem do curso */
+.curso-foto {
+    width: 60%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Nome do curso */
+.curso-nome {
+    margin: 15px 0 10px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/* Descrição do curso */
+.curso-descricao {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Botão destacado */
+.botao-destaque {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #e0700d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botao-destaque:hover {
+    background-color:#c0580a;;
+}
