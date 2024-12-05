@@ -1,171 +1,163 @@
 /* Estilo Geral */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
-  }
-  
-  header {
-    background-color: #444;
-    color: white;
-    text-align: center;
-    padding: 1em 0;
-  }
-  
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background-color: #444;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+}
+
+header h1 {
+  font-size: 2em;
+}
+
+main {
+  padding: 20px;
+  width: 100%; /* Agora ocupa 100% da largura disponível */
+  max-width: 850px; /* Limita a largura máxima */
+  margin: 20px auto;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+main p,
+main ul {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+main ul {
+  padding-left: 20px;
+}
+
+main ul li {
+  margin-bottom: 10px;
+}
+
+/* Estilo do botão */
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background-color: #f77809;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  width: 100%; /* Faz o botão ocupar toda a largura disponível */
+  max-width: 850px; /* Limita a largura máxima do botão */
+  box-sizing: border-box; /* Garante que o padding não afete a largura total */
+  margin: 0 auto; /* Centraliza o botão horizontalmente */
+  text-align: center; /* Centraliza o texto dentro do botão */
+}
+
+/* Tornar as imagens responsivas */
+img {
+  width: 100%;
+  /* Ajusta a imagem para preencher 100% da largura do container */
+  height: auto;
+  /* Ajuste automático da altura para manter a proporção */
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #444;
+  color: white;
+  margin-top: 20px;
+}
+
+/* Botão de Matrícula */
+.btn-matricula {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background-color: #e0700d;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-matricula:hover {
+  background-color: #d96c0b; /* Cor um pouco mais escura ao passar o mouse */
+}
+
+/* Estilo do Preço */
+.preco-curso {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #e0700d;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
   header h1 {
-    font-size: 2em;
+    font-size: 1.8em;
+    padding: 0.5em;
   }
-  
+
   main {
-    padding: 20px;
-    width: 850px;
-    margin: 20px auto;
-    background: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: none; /* Remove a sombra para simplificar o design em telas menores */
+    width: 90%; /* Ajusta a largura para 90% da tela em dispositivos menores */
   }
-  
+
   main p,
   main ul {
-    font-size: 1.1em;
-    margin-bottom: 20px;
+    font-size: 1em;
   }
-  
-  main ul {
-    padding-left: 20px;
-  }
-  
-  main ul li {
-    margin-bottom: 10px;
-  }
-  
-  /* a {
-    display: inline-block;
-    text-decoration: none;
-    color: white;
-    background-color: #5cb85c;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    width: 775px;
-  } */
-  
-  a {
-    display: inline-block;
-    text-decoration: none;
-    color: white;
-    background-color: #f77809;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    width: 100%; /* Faz o botão ocupar toda a largura disponível */
-    max-width: 850px; /* Limita a largura máxima do botão */
-    box-sizing: border-box; /* Garante que o padding não afete a largura total */
-    margin: 0 auto; /* Centraliza o botão horizontalmente */
-    text-align: center; /* Centraliza o texto dentro do botão */
-  }
-  
-  
-  
-  /* Tornar as imagens responsivas */
-  img {
-    width: 100%;
-    /* Ajusta a imagem para preencher 100% da largura do container */
-    height: auto;
-    /* Ajuste automático da altura para manter a proporção */
-  }
-  
-  footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: #444;
-    color: white;
-    margin-top: 20px;
-  }
-  
-  /* Botão de Matrícula */
+
   .btn-matricula {
-    display: inline-block;
-    text-decoration: none;
-    color: white;
-    background-color: #e0700d;
-    padding: 12px 20px;
-    border-radius: 5px;
-    font-size: 1.1em;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 20px;
-    transition: background-color 0.3s ease;
+    padding: 10px 15px;
+    font-size: 1em;
+    width: 100%; /* Faz o botão ocupar toda a largura disponível */
   }
-  /*
-  .btn-matricula:hover {
-    background-color: #d96c0b;
-   Cor um pouco mais escura ao passar o mouse
-  } 
-  */
-    .btn-matriculaA:hover {
-      background-color: #f77809;
-    }
-  
-  /* Estilo do Preço */
-  .preco-curso {
-    font-size: 1.3em;
-    font-weight: bold;
-    color: #e0700d;
-    margin-top: 20px;
+
+  footer {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  main p,
+  main ul {
+    font-size: 0.9em;
+  }
+
+  .btn-matricula {
+    width: 100%; /* O botão ocupa 100% da largura disponível */
     text-align: center;
   }
-  
-  /* Responsividade */
-  @media (max-width: 768px) {
-    header h1 {
-      font-size: 1.8em;
-      padding: 0.5em;
-    }
-  
-    main {
-      padding: 15px;
-      margin: 10px;
-      box-shadow: none;
-      /* Remove a sombra para simplificar o design em telas menores */
-    }
-  
-    main p,
-    main ul {
-      font-size: 1em;
-    }
-  
-    .btn-matricula {
-      padding: 10px 15px;
-      font-size: 1em;
-    }
-  
-    footer {
-      font-size: 0.9em;
-    }
+
+  footer {
+    font-size: 0.8em; /* Ajuste do tamanho do texto no rodapé */
   }
-  
-  @media (max-width: 480px) {
-    header h1 {
-      font-size: 1.5em;
-    }
-  
-    main p,
-    main ul {
-      font-size: 0.9em;
-    }
-  
-    .btn-matricula {
-      width: 100%;
-      /* Botão ocupa toda a largura disponível */
-      text-align: center;
-    }
-  
-    footer {
-      font-size: 0.8em;
-      /* Ajuste do tamanho do texto no rodapé */
-    }
+
+  main {
+    padding: 10px;
+    margin: 5px;
   }
+
+  header h1 {
+    font-size: 1.6em;
+  }
+}

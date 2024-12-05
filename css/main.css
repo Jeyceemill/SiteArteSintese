@@ -269,14 +269,13 @@ h3 {
 }
 
 /* Cursos */
+
 .curso h1 {
     font-size: 30px;
-
 }
 
 .curso p {
     font-size: 20px;
-
 }
 
 .curso {
@@ -294,12 +293,10 @@ h3 {
     transform: scale(1.05);
 }
 
-
 .curso-card:active {
     box-shadow: 0 4px 10px rgba(194, 21, 55, 0.4);
     transform: scale(0.98);
 }
-
 
 .matricula {
     font-size: 20px;
@@ -310,18 +307,24 @@ h3 {
     padding: 10px 20px;
     border-radius: 8px;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+    padding: 20px 20px 20px 20px;
 }
 
 .matricula:hover {
     box-shadow: 0 4px 10px rgba(194, 21, 55, 0.3);
     transform: scale(1.05);
     background-color: #E0700D;
+    padding: 20px 20px 20px 20px;
+
 }
 
 .matricula:active {
     box-shadow: 0 4px 10px rgba(194, 21, 55, 0.4);
     transform: scale(0.98);
     background-color: #9E0B2A;
+    padding: 20px 20px 20px 20px;
+
 }
 
 .curso h1 {
@@ -359,6 +362,114 @@ h3 {
     margin: 10px 0;
 }
 
+/* para dispositivos (mobile) */
+@media (max-width: 768px) {
+    .curso h1 {
+        font-size: 24px;
+    }
+
+    .curso p {
+        font-size: 16px;
+    }
+
+    .curso-card {
+        margin: 10px 0;
+    }
+
+    .curso-card img {
+        height: 200px;
+    }
+
+    .matricula {
+        font-size: 18px;
+        padding: 8px 16px;
+    }
+
+    .curso-card .curso-content {
+        padding: 15px;
+    }
+
+    .curso-card h2 {
+        font-size: 22px;
+    }
+
+    .curso-card p {
+        font-size: 14px;
+    }
+}
+
+/* para dispositivos medios (tablets) */
+@media (max-width: 1024px) {
+    .curso h1 {
+        font-size: 26px;
+    }
+
+    .curso p {
+        font-size: 18px;
+    }
+
+    .curso-card {
+        margin: 15px 0;
+    }
+
+    .curso-card img {
+        height: 250px;
+    }
+
+    .matricula {
+        font-size: 19px;
+        padding: 9px 18px;
+    }
+
+    .curso-card .curso-content {
+        padding: 18px;
+    }
+
+    .curso-card h2 {
+        font-size: 24px;
+    }
+
+    .curso-card p {
+        font-size: 15px;
+    }
+}
+
+/* Para dispositivos grandes (desktops)" */
+@media (min-width: 1025px) {
+    .curso h1 {
+        font-size: 30px;
+    }
+
+    .curso p {
+        font-size: 20px;
+    }
+
+    .curso-card {
+        margin: 20px 0;
+    }
+
+    .curso-card img {
+        height: 300px;
+    }
+
+    .matricula {
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+
+    .curso-card .curso-content {
+        padding: 20px;
+    }
+
+    .curso-card h2 {
+        font-size: 26px;
+    }
+
+    .curso-card p {
+        font-size: 16px;
+    }
+}
+
 /* Responsividade */
 @media (min-width: 768px) {
     .curso-card {
@@ -377,7 +488,6 @@ h3 {
         flex: 1;
         text-align: left;
         margin: 20px;
-
     }
 }
 
@@ -576,6 +686,7 @@ h3 {
     font-weight: 400;
     transition: background-color 0.3s;
     z-index: 20;
+
 }
 
 .btn-main:hover {

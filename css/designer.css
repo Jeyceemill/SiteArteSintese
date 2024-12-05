@@ -21,7 +21,8 @@ header h1 {
 
 main {
   padding: 20px;
-  width: 850px;
+  width: 100%; /* Mudança para 100% para garantir que ocupe toda a largura possível */
+  max-width: 850px; /* Define o tamanho máximo */
   margin: 20px auto;
   background: white;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -57,8 +58,6 @@ a {
   text-align: center; /* Centraliza o texto dentro do botão */
 }
 
-
-
 /* Tornar as imagens responsivas */
 img {
   width: 100%;
@@ -89,15 +88,10 @@ footer {
   margin-top: 20px;
   transition: background-color 0.3s ease;
 }
-/*
+
 .btn-matricula:hover {
-  background-color: #d96c0b;
- Cor um pouco mais escura ao passar o mouse
-} 
-*/
-  .btn-matriculaA:hover {
-    background-color: #f77809;
-  }
+  background-color: #d96c0b; /* Cor um pouco mais escura ao passar o mouse */
+}
 
 /* Estilo do Preço */
 .preco-curso {
@@ -120,6 +114,7 @@ footer {
     margin: 10px;
     box-shadow: none;
     /* Remove a sombra para simplificar o design em telas menores */
+    width: 90%; /* Ajusta a largura para 90% da tela em dispositivos menores */
   }
 
   main p,
@@ -130,6 +125,8 @@ footer {
   .btn-matricula {
     padding: 10px 15px;
     font-size: 1em;
+    width: 100%;
+    /* Botão ocupa toda a largura disponível */
   }
 
   footer {
@@ -156,5 +153,14 @@ footer {
   footer {
     font-size: 0.8em;
     /* Ajuste do tamanho do texto no rodapé */
+  }
+
+  main {
+    padding: 10px;
+    margin: 5px;
+  }
+
+  header h1 {
+    font-size: 1.6em;
   }
 }
