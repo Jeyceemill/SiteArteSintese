@@ -1,15 +1,3 @@
-  // Biblioteca para carrossel
-let swiper = new Swiper('.swiper', {
-    loop: true, 
-    autoplay: {
-      delay: 5000, 
-      disableOnInteraction: false, 
-    },
-    effect: 'fade', 
-    fadeEffect: {
-      crossFade: true, 
-    },
-
 
   // pagina de cadastro envio formulário
 
